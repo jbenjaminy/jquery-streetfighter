@@ -1,0 +1,125 @@
+body {
+	background-color: black;
+}
+ 
+.main {
+	background-color: white;
+	margin-top: 110px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	z-index: 1;
+}
+
+.col {
+	width: 38%;
+	margin-left: 0.5%;
+    margin-right: 0.5%;
+	display: inline-block;
+	position: relative;
+}
+
+.middle {
+	width: 18%;
+}
+
+.ryu, .ryu-angry {
+	width: 659px;
+	height: 494px;
+	display: inline-block;
+}
+
+.ryu-angry {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+	filter: hue-rotate(90deg);
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-still-angry, .ryu-throwing-angry, .ryu-cool-angry {
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-throwing-angry, .ryu-cool-angry {
+	display: none;
+}
+
+.ryu-ready, .ryu-ready-angry {
+	background-image: url("../images/ryu-ready-position.gif");
+}
+
+.ryu-still, .ryu-still-angry {
+	background-image: url("../images/ryu-standing-still.png");
+}
+
+.ryu-throwing, .ryu-throwing-angry {
+	background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.ryu-cool, .ryu-cool-angry{
+	background-image: url("../images/ryu-cool.gif");
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-ready-angry, .ryu-still-angry, .ryu-throwing-angry, .ryu-cool-angry, .hadouken {
+	background-repeat: no-repeat;
+}
+
+.hadouken, .hadouken-angry {
+	background-image: url("../images/hadouken.gif");
+	width: 156px;
+	height: 90px;
+	display: none;
+	top: 164px;
+	position: absolute;
+	z-index: 10;
+}
+
+.hadouken {
+	left: 470px;
+	float: left;
+}
+
+.hadouken-angry {
+	right: 560px;
+	float: right;
+	-webkit-filter: hue-rotate(90deg)
+	filter: hue-rotate(90deg);
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.explanation {
+	z-index: 9;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    font-family: 'shadows into light';
+}
+
+.explanation h2 {
+	text-align: center;
+}
+
+.explanation h3 {
+	font-size: 2rem;
+}
+
+#angry-pose {
+	float: right;
+}
+
+@media only screen and (max-width: 1555px) {
+
+.explanation {
+	font-size: .85rem;
+}
+
+}

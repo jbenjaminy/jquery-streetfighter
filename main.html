@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Streetfighter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="col">
+      <div class="ryu">
+        <div class="ryu-character ryu-still"></div>
+        <div class="ryu-character ryu-ready"></div>
+        <div class="ryu-character ryu-throwing"></div>
+        <div class="ryu-character ryu-cool"></div>
+      </div>
+      <div class="hadouken"></div>
+    </div>
+    <div class="col middle explanation">
+      <h2>Mouse hover for ready pose (Click to fire)</h2>
+      <h2>Keydown for cool pose</h2>
+      <h3><span class="normal-pose">&#8592; "X"</span> <span class="angry-pose">"Z" &#8594;</span></h3>
+    </div>
+    <div class="col">
+      <div class="ryu-angry">
+        <div class="ryu-character-angry ryu-still-angry" style="-webkit-filter: hue-rotate(90deg);"></div>
+        <div class="ryu-character-angry ryu-ready-angry" style="-webkit-filter: hue-rotate(90deg);"></div>
+        <div class="ryu-character-angry ryu-throwing-angry" style="-webkit-filter: hue-rotate(90deg);"></div>
+        <div class="ryu-character-angry ryu-cool-angry" style="-webkit-filter: hue-rotate(90deg);"></div>
+      </div>
+      <div class="hadouken-angry" style="-webkit-filter: hue-rotate(90deg);"></div>
+    </div>
+  </div>
+  <audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
